@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct CommunityItemView: View {
+    
+    private let width = UIScreen.main.bounds.width
+    private let height = UIScreen.main.bounds.height
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink(destination: {
+            CommynityItemDetailView()
+        }, label: {
+            Rectangle()
+                .fill(.yellow)
+                .frame(width: width * 0.9, height: height * 0.3)
+        })
     }
 }
 

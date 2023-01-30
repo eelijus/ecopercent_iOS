@@ -15,15 +15,25 @@ struct MyRoomView: View {
     var body: some View {
         NavigationView {
             VStack {
+                ProfileView()
                 //Header Icon
-                HStack {
-                    Image(systemName: "takeoutbag.and.cup.and.straw")
-                        .frame(width: width / 2, height: width / 2)
-                        .font(.system(size: 50, weight: .bold))
-                    Image(systemName: "bag")
-                        .frame(width: width / 2, height: width / 2)
-                        .font(.system(size: 50, weight: .bold))
+                HStack(spacing: 50) {
+                    Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: "takeoutbag.and.cup.and.straw")
+                            .frame(width: width / 3, height: width / 3)
+                            .font(.system(size: 50, weight: .bold))
+                    })
+                    Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: "bag")
+                            .frame(width: width / 3, height: width / 3)
+                            .font(.system(size: 50, weight: .bold))
+                    })
                 }
+                .padding(.top, -10)
                 .padding(.horizontal)
                 //Item List
                 HStack {
@@ -31,18 +41,24 @@ struct MyRoomView: View {
                         LazyVStack {
                             ForEach(0..<10) { _ in
                                 HStack {
-                                    Rectangle()
-                                        .fill(Color.gray)
-                                        .frame(width: width * 0.4, height: height / 5)
-                                        .overlay (
-                                            VStack {
-                                                Text("Image")
-                                                    .padding(.top, 55)
-                                                    .padding(.bottom, 50)
-                                                Text("guage")
-                                                
-                                            }
-                                        )
+                                    Button(action: {
+                                        
+                                    }, label: {
+                                        Rectangle()
+                                            .fill(Color.gray)
+                                            .frame(width: width * 0.4, height: height / 5)
+                                            .overlay (
+                                                VStack {
+                                                    Text("Image")
+                                                        .foregroundColor(.black)
+                                                        .padding(.top, 55)
+                                                        .padding(.bottom, 50)
+                                                    Text("guage")
+                                                        .foregroundColor(.black)
+                                                    
+                                                }
+                                            )
+                                    })
                                 }
                                 
                             }
@@ -52,18 +68,24 @@ struct MyRoomView: View {
                         LazyVStack {
                             ForEach(0..<10) { _ in
                                 HStack {
-                                    Rectangle()
-                                        .fill(Color.gray)
-                                        .frame(width: width * 0.4, height: height / 5)
-                                        .overlay (
-                                            VStack {
-                                                Text("Image")
-                                                    .padding(.top, 55)
-                                                    .padding(.bottom, 50)
-                                                Text("guage")
-                                                
-                                            }
-                                        )
+                                    Button(action: {
+                                        
+                                    }, label: {
+                                        Rectangle()
+                                            .fill(Color.gray)
+                                            .frame(width: width * 0.4, height: height / 5)
+                                            .overlay (
+                                                VStack {
+                                                    Text("Image")
+                                                        .padding(.top, 55)
+                                                        .padding(.bottom, 50)
+                                                        .foregroundColor(.black)
+                                                    Text("guage")
+                                                        .foregroundColor(.black)
+                                                    
+                                                }
+                                            )
+                                    })
                                 }
                                 
                             }

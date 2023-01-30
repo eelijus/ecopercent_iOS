@@ -14,13 +14,13 @@ struct MainTabView: View {
     var body: some View {
         NavigationView {
             TabView {
-                CommunityView()
-                    .tabItem({
-                        Image(systemName: "shared.with.you")
-                    })
                 MyRoomView()
                     .tabItem({
                         Image(systemName: "house")
+                    })
+                CommunityView()
+                    .tabItem({
+                        Image(systemName: "shared.with.you")
                     })
                 NotificationView()
                     .tabItem({
