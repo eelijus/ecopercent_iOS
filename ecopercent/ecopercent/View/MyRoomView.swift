@@ -11,7 +11,8 @@ struct MyRoomView: View {
     
     private let width = UIScreen.main.bounds.width
     private let height = UIScreen.main.bounds.height
-    
+    @Binding var isPresented: Bool
+
     var body: some View {
         NavigationView {
             VStack {
@@ -19,7 +20,7 @@ struct MyRoomView: View {
                 //Header Icon
                 HStack(spacing: 50) {
                     Button(action: {
-                        
+                        isPresented = true
                     }, label: {
                         Image(systemName: "takeoutbag.and.cup.and.straw")
                             .frame(width: width / 3, height: width / 3)
@@ -41,24 +42,29 @@ struct MyRoomView: View {
                         LazyVStack {
                             ForEach(0..<10) { _ in
                                 HStack {
-                                    Button(action: {
-                                        
-                                    }, label: {
-                                        Rectangle()
-                                            .fill(Color.gray)
-                                            .frame(width: width * 0.4, height: height / 5)
-                                            .overlay (
-                                                VStack {
-                                                    Text("Image")
-                                                        .foregroundColor(.black)
-                                                        .padding(.top, 55)
-                                                        .padding(.bottom, 50)
-                                                    Text("guage")
-                                                        .foregroundColor(.black)
-                                                    
-                                                }
-                                            )
-                                    })
+                                    Button {
+                                        isPresented = true
+
+                                        } label: {
+                                            Rectangle()
+                                                .fill(Color.gray)
+                                                .frame(width: width * 0.4, height: height / 5)
+                                        }
+                                        .overlay (
+                                            VStack {
+                                                Text("Image")
+                                                    .foregroundColor(.black)
+                                                    .padding(.top, 55)
+                                                    .padding(.bottom, 50)
+                                                Text("guage")
+                                                    .foregroundColor(.black)
+
+                                            }
+                                        )
+                                        .sheet(isPresented: $isPresented) {
+                                          HomeItemView()
+                                        }
+
                                 }
                                 
                             }
@@ -100,8 +106,8 @@ struct MyRoomView: View {
 
 }
 
-struct MyRoomView_Previews: PreviewProvider {
-    static var previews: some View {
-        MyRoomView()
-    }
-}
+//struct MyRoomView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyRoomView()
+//    }
+//}

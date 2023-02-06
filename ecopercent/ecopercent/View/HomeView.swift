@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     private let width = UIScreen.main.bounds.width
-    @State var globalAlertActivated: Bool = false
+    @State var globalAlertActivated: Bool = true
     
     var body: some View {
         VStack {

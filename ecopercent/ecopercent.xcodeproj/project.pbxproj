@@ -25,6 +25,7 @@
 		091C2FA4298798810000E3A9 /* CommynityItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C2FA3298798810000E3A9 /* CommynityItemDetailView.swift */; };
 		091C2FA62987A0E40000E3A9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C2FA52987A0E40000E3A9 /* SearchBar.swift */; };
 		091C2FA82987A5CA0000E3A9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C2FA72987A5CA0000E3A9 /* ProfileView.swift */; };
+		091C2FAA298C86D30000E3A9 /* HomeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091C2FA9298C86D30000E3A9 /* HomeItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		091C2FA3298798810000E3A9 /* CommynityItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommynityItemDetailView.swift; sourceTree = "<group>"; };
 		091C2FA52987A0E40000E3A9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		091C2FA72987A5CA0000E3A9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		091C2FA9298C86D30000E3A9 /* HomeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				091C2FA3298798810000E3A9 /* CommynityItemDetailView.swift */,
 				091C2FA52987A0E40000E3A9 /* SearchBar.swift */,
 				091C2FA72987A5CA0000E3A9 /* ProfileView.swift */,
+				091C2FA9298C86D30000E3A9 /* HomeItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				091C2FA82987A5CA0000E3A9 /* ProfileView.swift in Sources */,
 				091C2F9529861A9B0000E3A9 /* OnboardingScreen.swift in Sources */,
 				091C2F9729861AAB0000E3A9 /* SettingView.swift in Sources */,
+				091C2FAA298C86D30000E3A9 /* HomeItemView.swift in Sources */,
 				091C2FA229862C620000E3A9 /* HomeView.swift in Sources */,
 				091C2FA029862AE50000E3A9 /* MyRoomView.swift in Sources */,
 				091C2FA62987A0E40000E3A9 /* SearchBar.swift in Sources */,

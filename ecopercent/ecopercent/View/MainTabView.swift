@@ -9,12 +9,13 @@ import SwiftUI
 
 struct MainTabView: View {
     
+    @State var isPresented: Bool = false
     private let width = UIScreen.main.bounds.width
     
     var body: some View {
         NavigationView {
             TabView {
-                MyRoomView()
+                MyRoomView(isPresented: $isPresented)
                     .tabItem({
                         Image(systemName: "house")
                     })
