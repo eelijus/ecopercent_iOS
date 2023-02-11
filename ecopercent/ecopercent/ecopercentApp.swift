@@ -11,8 +11,8 @@ import SwiftUI
 struct ecopercentApp: App {
     var body: some Scene {
         WindowGroup {
-            AuthenticationView()
-//            HomeView()
+//            AuthenticationView()
+            HomeView()
         }
     }
 }

@@ -15,20 +15,21 @@ struct MainTabView: View {
     var body: some View {
         NavigationView {
             TabView {
-                MyRoomView(isPresented: $isPresented)
-                    .tabItem({
+                MainPageView()
+                    .tabItem {
                         Image(systemName: "house")
-                    })
-                CommunityView()
-                    .tabItem({
+                            .font(.title)
+                    }
+                ItemPageView()
+                    .tabItem {
                         Image(systemName: "shared.with.you")
-                    })
-                NotificationView()
+                    }
+                SettingView()
                     .tabItem({
                         Image(systemName: "bell")
                     })
             }
-            .accentColor(.green)
+            .accentColor(.black)
 //            .navigationTitle("eco %")
 //            .navigationBarTitleDisplayMode(.inline)
         }
